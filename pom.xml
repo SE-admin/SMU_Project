@@ -17,9 +17,6 @@
   </dependencies>
 
 
-
-
-
   <build>
 
 	<plugins>
@@ -45,6 +42,10 @@
 				<artifactId>maven-pmd-plugin</artifactId>
 				<version>3.6</version>
 					<configuration>
+						<rulesets>
+							<ruleset>/rulesets/java/design.xml</ruleset>
+							<ruleset>/rulesets/java/basic.xml</ruleset>
+						</rulesets>
 					  <linkXref>true</linkXref>
 					  <minimumTokens>50</minimumTokens>
 					</configuration>
@@ -74,6 +75,10 @@
 			<artifactId>maven-pmd-plugin</artifactId>
 			<version>3.6</version>
 				<configuration>
+						<rulesets>
+							<ruleset>/rulesets/java/design.xml</ruleset>
+							<ruleset>/rulesets/java/basic.xml</ruleset>
+						</rulesets>
 				  <linkXref>true</linkXref>
 				  <minimumTokens>50</minimumTokens>
 				</configuration>
